@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treboada Cup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Treboada Cup</h1>
+    <nav>
+      <ul>
+        <li><a href="#grupos">Grupos</a></li>
+        <li><a href="#calendario">Calendario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Embed de Twitch -->
+  <section id="twitch-stream">
+    <h2>¡En directo!</h2>
+    <div class="twitch-embed">
+      <iframe src="https://player.twitch.tv/?channel=elgrantorneo&parent=localhost" frameborder="0"
+        allowfullscreen="true" scrolling="no" height="400" width="100%">
+      </iframe>
+    </div>
+  </section>
+
+  <main>
+    <!-- Sección de Grupos -->
+    <section id="grupos">
+      <h2>Grupos por Categoría</h2>
+      <div class="grupo-navegacion">
+        <button id="anterior-categoria">←</button>
+        <h3 id="nombre-categoria"></h3>
+        <button id="siguiente-categoria">→</button>
+      </div>
+      <div id="carrusel-grupos">
+        <div id="contenedor-categorias"></div>
+      </div>
+    </section>
+
+    <!-- Calendario -->
+    <section id="calendario">
+      <h2>Calendario</h2>
+      <div id="contenedor-calendario"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Treboada Cup. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

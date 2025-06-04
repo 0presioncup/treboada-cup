@@ -1,0 +1,224 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES DE DISEÑO ===== */
+:root {
+  --bg: #f4f6f8;
+  --primary: #0077ff;
+  --accent: #ff5500;
+  --text: #222;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--white);
+  padding: 2rem;
+  box-shadow: 0 4px 8px var(--shadow);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* ===== TWITCH EMBED ===== */
+#twitch-stream {
+  padding: 2rem;
+  background-color: var(--white);
+  text-align: center;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+#twitch-stream h2 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.twitch-embed iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ===== SECCIONES ===== */
+main section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+/* ===== NAVEGACIÓN CATEGORÍAS ===== */
+.grupo-navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.grupo-navegacion button {
+  background-color: var(--primary);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.grupo-navegacion button:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
+
+#nombre-categoria {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* ===== CONTENEDOR DE GRUPOS ===== */
+#carrusel-grupos {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#contenedor-categorias {
+  display: flex;
+  transition: transform 0.6s ease;
+  will-change: transform;
+  width: 100%;
+}
+
+/* Cada vista de categoría ocupa 100% del ancho visible */
+.categoria-slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.grupo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+/* ===== TARJETA ===== */
+.card {
+  background-color: var(--bg);
+  border-left: 6px solid var(--primary);
+  padding: 1.2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 119, 255, 0.2);
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  list-style: disc;
+  margin-left: 1.2rem;
+}
+
+.card ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* ===== CALENDARIO ===== */
+#contenedor-calendario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--white);
+  color: #666;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+/* ===== RESPONSIVE NAV ===== */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .grupo-navegacion {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .grupo-navegacion button {
+    width: 100%;
+  }
+}

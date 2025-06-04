@@ -1,0 +1,157 @@
+{
+  "categorias": [
+    {
+      "nombre": "Sub 12",
+      "grupos": [
+        {
+          "nombre": "Grupo A",
+          "equipos": [
+            "Tiburones Kids",
+            "Águilas Verdes",
+            "Mini Dragones",
+            "Panteras Junior"
+          ]
+        },
+        {
+          "nombre": "Grupo B",
+          "equipos": [
+            "Furia Azul",
+            "Los Rayitos",
+            "Leones Sub 12",
+            "Tormenta Infantil"
+          ]
+        },
+        {
+          "nombre": "Grupo C",
+          "equipos": [
+            "Lobos Rápidos",
+            "Tigres Amarillos",
+            "Halcones Sur",
+            "Relámpagos"
+          ]
+        },
+        {
+          "nombre": "Grupo D",
+          "equipos": [
+            "Guardianes",
+            "Mini Guerreros",
+            "Zorros del Norte",
+            "Fénix Azul"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sub 14",
+      "grupos": [
+        {
+          "nombre": "Grupo A",
+          "equipos": [
+            "Trueno FC",
+            "Academia Elite",
+            "Titanes",
+            "Cóndores"
+          ]
+        },
+        {
+          "nombre": "Grupo B",
+          "equipos": [
+            "Huracanes",
+            "Escorpiones",
+            "Lince Sub 14",
+            "Atlético Joven"
+          ]
+        },
+        {
+          "nombre": "Grupo C",
+          "equipos": [
+            "Relámpago Rojo",
+            "Águilas del Este",
+            "Leones Azules",
+            "Centellas"
+          ]
+        },
+        {
+          "nombre": "Grupo D",
+          "equipos": [
+            "Cobra Futsal",
+            "Guerreros Júnior",
+            "Tiburones Rojos",
+            "Rayo Juvenil"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Senior",
+      "grupos": [
+        {
+          "nombre": "Grupo A",
+          "equipos": [
+            "Treboada FC",
+            "Bravos",
+            "Legendarios",
+            "Futsal Masters"
+          ]
+        },
+        {
+          "nombre": "Grupo B",
+          "equipos": [
+            "Los del Barrio",
+            "Ártico F.C.",
+            "Real Marítimo",
+            "Rebeldes"
+          ]
+        },
+        {
+          "nombre": "Grupo C",
+          "equipos": [
+            "Furia Urbana",
+            "Alianza Sur",
+            "Atlético Costa",
+            "Gladiadores"
+          ]
+        },
+        {
+          "nombre": "Grupo D",
+          "equipos": [
+            "Cañoneros",
+            "Storm Team",
+            "Depor Futsal",
+            "Old School"
+          ]
+        }
+      ]
+    }
+  ],
+  "calendario": [
+    {
+      "fecha": "2025-06-10",
+      "partidos": [
+        {
+          "hora": "10:00",
+          "categoria": "Sub 12",
+          "grupo": "Grupo A",
+          "partido": "Equipo A1 vs Equipo A2"
+        },
+        {
+          "hora": "11:00",
+          "categoria": "Sub 14",
+          "grupo": "Grupo C",
+          "partido": "Equipo C3 vs Equipo C4"
+        }
+      ]
+    },
+    {
+      "fecha": "2025-06-11",
+      "partidos": [
+        {
+          "hora": "09:00",
+          "categoria": "Senior",
+          "grupo": "Grupo B",
+          "partido": "Equipo B2 vs Equipo B3"
+        }
+      ]
+    }
+  ]
+}
